@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Instrument+Serif:ital@0;1&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'DM Sans', system-ui, sans-serif;
+  --font-serif: 'Instrument Serif', Georgia, serif;
+
+  --color-shell-darkest: #0a0a0a;
+  --color-shell-darker: #0e0e0e;
+  --color-shell-dark: #111111;
+  --color-shell-mid: #1a1a1a;
+  --color-shell-light: #2d2d2d;
+
+  --color-warm-white: #fafaf8;
+
+  --color-accent: #c45d3e;
+
+  --color-text-primary: #e5e5e5;
+  --color-text-secondary: #888888;
+  --color-text-tertiary: #555555;
+
+  --color-status-green: #22c55e;
+  --color-status-blue: #3b82f6;
+  --color-status-amber: #f59e0b;
+  --color-status-red: #ef4444;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background: var(--color-shell-darkest);
+  color: var(--color-text-primary);
+  min-height: 100vh;
+}

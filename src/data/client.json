@@ -1,0 +1,56 @@
+{
+  "client": {
+    "primary": {
+      "name": "Sarah Chen",
+      "age": 42,
+      "employer": "Dataline Inc.",
+      "title": "VP of Engineering"
+    },
+    "spouse": {
+      "name": "David Chen",
+      "age": 44,
+      "employer": "Bay Area Public Schools",
+      "title": "Principal"
+    },
+    "advisor": {
+      "name": "James Whitfield",
+      "title": "Senior Financial Advisor",
+      "firm": "Meridian Advisors"
+    },
+    "seniorAdvisor": {
+      "name": "Patricia Okafor",
+      "title": "Managing Director"
+    }
+  },
+  "ips": {
+    "model": "Moderate Growth 2048",
+    "targetAllocation": {
+      "equities": 65,
+      "fixedIncome": 28,
+      "cash": 7
+    },
+    "riskTolerance": "Moderate",
+    "taxSensitivity": "High — maximize tax-advantaged accounts",
+    "constraints": [
+      "RSU concentration in tech (Dataline)",
+      "Client prefers to hold VGT (sector conviction)"
+    ],
+    "nextReview": "2026-03-04"
+  },
+  "accounts": [
+    { "id": "acct-1", "name": "Sarah Individual Brokerage", "type": "Taxable", "value": 1247832 },
+    { "id": "acct-2", "name": "Sarah Traditional IRA", "type": "Tax-Deferred", "value": 482150 },
+    { "id": "acct-3", "name": "Sarah Roth IRA", "type": "Tax-Free", "value": 215400 },
+    { "id": "acct-4", "name": "David 403(b)", "type": "Tax-Deferred", "value": 634200 },
+    { "id": "acct-5", "name": "David Roth IRA", "type": "Tax-Free", "value": 189400 },
+    { "id": "acct-6", "name": "Joint Brokerage", "type": "Taxable", "value": 1310254 }
+  ],
+  "portfolioSummary": {
+    "totalValue": 4079236,
+    "ytdReturn": 27.23,
+    "totalAccounts": 6,
+    "lastRebalance": "2025-09-15",
+    "portfolioBeta": 1.12,
+    "projectedBeta": 0.89
+  }
+}
