@@ -16,17 +16,20 @@ import clientData from '../data/client.json';
 import holdingsData from '../data/holdings.json';
 
 const ALLOCATION_COLORS = [
-  '#3b82f6', '#22c55e', '#f59e0b', '#8b5cf6', '#ec4899', '#06b6d4', '#64748b',
+  '#1e3a8a', '#93c5fd', '#f97316', '#3b82f6', '#ef4444', '#7c3aed', '#eab308', '#2563eb', '#22c55e', '#64748b',
 ];
 
 const ALLOCATION_LABELS = {
-  usLargeCap: 'US Large Cap',
-  intlDeveloped: "Int'l Developed",
-  emergingMarkets: 'Emerging Markets',
+  usLargeCap: 'US Equity - Large Cap',
+  usMidCap: 'US Equity - Mid Cap',
+  usSmallCap: 'US Equity - Small Cap',
+  intlDeveloped: "Int'l Developed Mkts",
+  emergingMarkets: "Int'l Emerging Mkts",
+  realEstate: 'Real Estate Securities',
+  commodities: 'Commodities',
   fixedIncome: 'Fixed Income',
-  realEstate: 'Real Estate',
-  alternatives: 'Alternatives',
-  cash: 'Cash',
+  cash: 'Cash/Cash Alternatives',
+  other: 'Other',
 };
 
 const pieData = Object.entries(holdingsData.allocation.current).map(
@@ -44,10 +47,11 @@ const driftData = holdingsData.drift.map((d) => ({
 }));
 
 const FINDINGS = [
-  'Portfolio is significantly overweight US large cap equities (+16.89% drift), driven by RSU vesting and tech appreciation.',
-  'Fixed income allocation at 5.15% vs 28% target — critical underweight heading into rising rate environment.',
-  'Tax-loss harvesting scan: 3 positions with unrealized losses, all in tax-advantaged accounts. No actionable opportunities.',
+  'Critical single-stock concentration: COIN and META each at ~23.7% of portfolio in Jude\'s taxable account. Combined 47.5% in two positions.',
+  'Equities at 93.85% of portfolio vs 65% target — massively overweight, driven by concentrated individual stock positions.',
+  'Fixed income allocation at 5.15% vs 28% target — critical underweight. Bond positions exist only in Dev IRA and Pre-tax IRA.',
   `Portfolio beta: ${clientData.portfolioSummary.portfolioBeta} current → ${clientData.portfolioSummary.projectedBeta} projected post-rebalance.`,
+  'International allocation at 32.43% is well-diversified across developed (28.21%) and emerging (4.22%) markets.',
 ];
 
 const stagger = {
@@ -91,7 +95,7 @@ export default function PortfolioAnalysis({ onNext }) {
           <div>
             <span className="text-[#888] text-xs uppercase tracking-wide font-semibold">Client</span>
             <p className="text-[#1a1a1a] mt-1">
-              {client.primary.name} ({client.primary.age}) & {client.spouse.name} ({client.spouse.age})
+              {client.primary.name} & {client.spouse.name}
             </p>
           </div>
           <div>

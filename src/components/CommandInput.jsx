@@ -3,7 +3,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 export default function CommandInput({ onRun }) {
   const [showAutocomplete, setShowAutocomplete] = useState(false);
-  const [inputValue, setInputValue] = useState('/client-review Sarah Chen');
+  const [inputValue, setInputValue] = useState('/client-review James Devoe Finley');
   const [cursorVisible, setCursorVisible] = useState(true);
 
   useEffect(() => {
@@ -93,7 +93,7 @@ export default function CommandInput({ onRun }) {
                 </div>
                 <div className="px-4 py-2 border-t border-shell-mid/60">
                   <span className="text-[10px] text-text-tertiary">
-                    Client matched: <span className="text-text-secondary">Sarah Chen</span> — Meridian Moderate Growth 2048
+                    Client matched: <span className="text-text-secondary">James Devoe Finley</span> — Meridian Moderate Growth 2048
                   </span>
                 </div>
               </motion.div>

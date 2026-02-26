@@ -1,16 +1,12 @@
 {
   "client": {
     "primary": {
-      "name": "Sarah Chen",
-      "age": 42,
-      "employer": "Dataline Inc.",
-      "title": "VP of Engineering"
+      "name": "James Devoe Finley",
+      "title": null
     },
     "spouse": {
-      "name": "David Chen",
-      "age": 44,
-      "employer": "Bay Area Public Schools",
-      "title": "Principal"
+      "name": "Jude Sue",
+      "title": null
     },
     "advisor": {
       "name": "James Whitfield",
@@ -32,25 +28,30 @@
     "riskTolerance": "Moderate",
     "taxSensitivity": "High — maximize tax-advantaged accounts",
     "constraints": [
-      "RSU concentration in tech (Dataline)",
-      "Client prefers to hold VGT (sector conviction)"
+      "Concentrated positions in COIN and META (Jude individual account, ~47% of portfolio)",
+      "Client prefers to maintain international developed allocation"
     ],
     "nextReview": "2026-03-04"
   },
   "accounts": [
-    { "id": "acct-1", "name": "Sarah Individual Brokerage", "type": "Taxable", "value": 1247832 },
-    { "id": "acct-2", "name": "Sarah Traditional IRA", "type": "Tax-Deferred", "value": 482150 },
-    { "id": "acct-3", "name": "Sarah Roth IRA", "type": "Tax-Free", "value": 215400 },
-    { "id": "acct-4", "name": "David 403(b)", "type": "Tax-Deferred", "value": 634200 },
-    { "id": "acct-5", "name": "David Roth IRA", "type": "Tax-Free", "value": 189400 },
-    { "id": "acct-6", "name": "Joint Brokerage", "type": "Taxable", "value": 1310254 }
+    { "id": "acct-1", "name": "Dev IRA", "owner": "James Devoe Finley", "custodian": "Northwestern Mutual *****0127", "type": "Tax-Deferred", "value": 1705598.08, "group": "Retirement" },
+    { "id": "acct-2", "name": "IRA", "owner": "Jude Sue", "custodian": "Northwestern Mutual *****5110", "type": "Tax-Deferred", "value": 0.00, "group": "Retirement" },
+    { "id": "acct-3", "name": "Roth IRA", "owner": "Jude Sue", "custodian": "Northwestern Mutual *****7036", "type": "Tax-Free", "value": 138852.53, "group": "Retirement", "subtitle": "Jude's old Coinbase 401k Roth and backdoor Roth" },
+    { "id": "acct-4", "name": "Dev Roth", "owner": "James Devoe Finley", "custodian": "Northwestern Mutual *****3031", "type": "Tax-Free", "value": 38431.54, "group": "Retirement" },
+    { "id": "acct-5", "name": "Pre-tax IRA", "owner": "Jude Sue", "custodian": "Northwestern Mutual *****5209", "type": "Tax-Deferred", "value": 140307.10, "group": "Retirement", "subtitle": "Jude's old Coinbase 401k pre tax portion" },
+    { "id": "acct-6", "name": "Jude account — COIN + META Stock", "owner": "Jude Sue", "custodian": "Northwestern Mutual *****8566", "type": "Taxable", "value": 1940529.75, "group": "General" },
+    { "id": "acct-7", "name": "Transfer on Death Individual", "owner": "Jude Sue", "custodian": "Northwestern Mutual *****6114", "type": "Taxable", "value": 0.00, "group": "General" },
+    { "id": "acct-8", "name": "Dev transfer on death", "owner": "James Devoe Finley", "custodian": "Northwestern Mutual *****2593", "type": "Taxable", "value": 115517.21, "group": "General" }
   ],
   "portfolioSummary": {
-    "totalValue": 4079236,
+    "totalValue": 4079075.55,
+    "retirementValue": 2023189.25,
+    "generalValue": 2056046.96,
     "ytdReturn": 27.23,
-    "totalAccounts": 6,
+    "totalAccounts": 8,
     "lastRebalance": "2025-09-15",
-    "portfolioBeta": 1.12,
-    "projectedBeta": 0.89
+    "portfolioBeta": 1.18,
+    "projectedBeta": 0.92,
+    "asOfDate": "Feb 26, 2026 11:12 AM PST"
   }
 }

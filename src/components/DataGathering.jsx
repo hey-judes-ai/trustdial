@@ -3,12 +3,12 @@ import { motion } from 'framer-motion';
 
 const DATA_STEPS = [
   {
-    label: 'Accessing portfolio holdings across 6 accounts...',
-    detail: 'Fidelity, Vanguard, Schwab custodians',
+    label: 'Accessing portfolio holdings across 8 accounts...',
+    detail: 'Northwestern Mutual custodian',
     duration: 400,
   },
   {
-    label: 'Fetching market prices for 27 securities via FactSet...',
+    label: 'Fetching market prices for 18 securities...',
     detail: 'Real-time pricing feed',
     duration: 500,
   },
@@ -19,7 +19,7 @@ const DATA_STEPS = [
   },
   {
     label: 'Running drift analysis and risk metrics...',
-    detail: '7 asset classes, 4 critical drifts detected',
+    detail: '9 asset classes, 3 critical drifts detected',
     duration: 450,
   },
 ];

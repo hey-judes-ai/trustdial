@@ -48,7 +48,7 @@ export default function Shell({ children, currentStep, stepLabels }) {
           <div className="flex items-center gap-2 text-xs text-text-tertiary">
             <span>Clients</span>
             <span className="text-shell-light">/</span>
-            <span className="text-text-secondary">Sarah Chen</span>
+            <span className="text-text-secondary">James Devoe Finley</span>
             <span className="text-shell-light">/</span>
             <span className="text-text-primary">Client Review</span>
           </div>
